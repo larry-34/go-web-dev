@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Names list</title>
+	</head>
+	<body>
+		{{$users := .}}
+		<h1>Users Ages</h1>
+		<ol>
+			{{range $index, $user := $users}}
+				<li>{{$user.Name}} - {{$user.Age}}</li>
+			{{end}}
+		</ol>
+	</body>
+</html>
